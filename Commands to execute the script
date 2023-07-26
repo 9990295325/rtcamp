@@ -1,0 +1,15 @@
+sudo su  // for shifting to root user for all the permissions 
+nano script.sh // for creating bash file for writting scripts inside.
+copy the script from "script.sh" in main branch to >> script.sh
+CTRL S && CTRL X // to save the script and exit the nano editor.
+chmod +x script.sh // to give executable permission to your script.sh [note] after persion the .sh file will turn into green color as per your ubuntu.
+   #IMPORTANT
+./script [site_name] enable // this command will launch the script // [site_name] user to provide the site name as a coomand line argument // [enable] this will start all the containers.
+./script [site_name] disable // this command will lauch the script // [site_name] user to provide the site name as a coomand line argument // [disable] this will stop all the containers.
+./script [site_name] delete // this command will launch the script // [site_name] user to provide the site name as a coomand line argument // [delete] this will delete all the containers.
+
+  # you can check your wordpress application by
+  localhost:8080 //wordpress
+  #running
+  
+
