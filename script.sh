@@ -10,7 +10,7 @@ fi
 
 # Check if site name argument was provided
 if [ -z "$1" ]; then
-  echo "Please provide a site name as an argument."
+  echo "please provide a site name as an argument."
   exit 1
 fi
 # Entry in /etc/hosts
@@ -21,7 +21,7 @@ echo "localhost:8000 $site_name" >> /etc/hosts
 mkdir wordpress-docker
 cd wordpress-docker
 # Creating public and nginx
-echo "Creating nginx configuration file"
+echo "creating nginx configuration file"
 mkdir public nginx
 cd nginx
 cat > default.conf << EOF
@@ -49,8 +49,8 @@ http{
     }
 }
 EOF
-echo "Done"
-echo "Creating index.php file in public"
+echo "done"
+echo "creating index.php file in public"
 cd ..
 cd public
 cat > index.php << EOF
@@ -59,7 +59,7 @@ phpinfo();
 EOF
 echo "Done"
 cd ..
-echo "Creating docker-compose file ..."
+echo "creating docker-compose file ..."
 cat > docker-compose.yml << EOF
 version: '3'
 
